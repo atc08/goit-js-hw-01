@@ -10,8 +10,9 @@ const jamaica = "Jamaica";
 const userCountry = prompt("Enter your country for shipping");
 
 if (userCountry !== null) {
-  const trueUserCountry =
-    userCountry[0].toUpperCase() + userCountry.slice(1).toLowerCase();
+  const trueUserCountry = `${userCountry[0].toUpperCase()}${userCountry
+    .slice(1)
+    .toLowerCase()}`;
   switch (trueUserCountry) {
     case china:
       country = "China";
